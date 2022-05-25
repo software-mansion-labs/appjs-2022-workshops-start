@@ -15,9 +15,7 @@ public class AppjsPackage implements ReactPackage {
     @NonNull
     @Override
     public List<NativeModule> createNativeModules(@NonNull ReactApplicationContext reactContext) {
-        List<NativeModule> modules = new ArrayList<>();
-        modules.add(new AppjsModule(reactContext));
-        return modules;
+        return Collections.emptyList();
     }
 
     @NonNull

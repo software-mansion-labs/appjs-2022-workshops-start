@@ -14,7 +14,8 @@
     "ios",
     "cpp",
     "react-native-appjs.podspec",
-    "!lib/typescript/example",
+    "!lib/typescript/Example",
+    "!lib/typescript/FabricExample",
     "!android/build",
     "!ios/build",
     "!**/__tests__",
@@ -26,10 +27,7 @@
     "typescript": "tsc --noEmit",
     "lint": "eslint \"**/*.{js,ts,tsx}\"",
     "prepare": "bob build",
-    "release": "release-it",
-    "example": "yarn --cwd example",
-    "pods": "cd example && pod-install --quiet",
-    "bootstrap": "yarn example && yarn && yarn pods"
+    "release": "release-it"
   },
   "keywords": [
     "react-native",
